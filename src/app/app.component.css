@@ -1,0 +1,41 @@
+#input {
+	width: 200px;
+}
+
+input {
+	padding: 6px;
+}
+
+.close {
+	padding: 2px;
+	background-color: #f2f2f2;
+	user-select: none;
+	float: right;
+	cursor: pointer;
+}
+
+.close:hover {
+	background-color: #fff;
+}
+
+li {
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+.itemDiv {
+	background-color: #f2f2f2;
+	width: 235px;
+    position: relative;
+    transform: translateX(-40px);
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.itemCnt {
+	background-color: #FFE400;
+	padding: 5px;
+	border-radius: 30px 30px 30px 30px;
+	-moz-border-radius: 30px 30px 30px 30px;
+	-webkit-border-radius: 30px 30px 30px 30px;
+}

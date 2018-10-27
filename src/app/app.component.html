@@ -1,0 +1,12 @@
+<h1>Todo App <span class='itemCnt'>{{todoArray.length}}</span></h1>
+
+<form #todoForm="ngForm" (ngSubmit)="todoSubmit(todoForm.value); todoForm.resetForm()">
+
+<input type="text" #val placeholder="Add a todo" id='input' name="val" ngModel>
+<input type="button" value="Add" (click)="addToList(val.value)">
+
+<ul>
+  <li *ngFor="let each of todoArray" class="itemDiv">{{each}}<span class="close" (click)="deleteItem(each)">X</span></li>
+</ul>
+
+</form>
